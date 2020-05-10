@@ -71,7 +71,7 @@ func (this *Trigger) GetNextDate(t time.Time) time.Time{
 		 if flag{
 		 	return t;
 		 }
-		 if(checkss&&t.Second()==(int)(sml.ConvertToInt(this.cronE.ss))){
+		 if(checkss&&t.Second()==(int)(gosml.ConvertToInt(this.cronE.ss))){
 		 	break
 		 }
 	 }
@@ -81,7 +81,8 @@ func (this *Trigger) GetNextDate(t time.Time) time.Time{
 		 if flag{
 		 	return t;
 		 }
-		 if(checkmi&&t.Minute()==(int)(sml.ConvertToInt(this.cronE.mi))){
+		 if(checkmi&&t.Minute()==(int)(go
+		 		gosml.ConvertToInt(this.cronE.mi))){
 		 	break
 		 }
 	 }
@@ -91,7 +92,7 @@ func (this *Trigger) GetNextDate(t time.Time) time.Time{
 		 if flag{
 		 	return t;
 		 }
-		 if(checkhh&&t.Hour()==(int)(sml.ConvertToInt(this.cronE.hh))){
+		 if(checkhh&&t.Hour()==(int)(gosml.ConvertToInt(this.cronE.hh))){
 		 	break
 		 }
 	 }
@@ -101,7 +102,7 @@ func (this *Trigger) GetNextDate(t time.Time) time.Time{
 		 if flag{
 		 	return t;
 		 }
-		 if(checkdd&&t.Day()==(int)(sml.ConvertToInt(this.cronE.dd))){
+		 if(checkdd&&t.Day()==(int)(gosml.ConvertToInt(this.cronE.dd))){
 		 	break
 		 }
 	 }
@@ -111,7 +112,7 @@ func (this *Trigger) GetNextDate(t time.Time) time.Time{
 		 if flag{
 		 	return t;
 		 }
-		 if(checkmm&&(int)(t.Month())==(int)(sml.ConvertToInt(this.cronE.mm))){
+		 if(checkmm&&(int)(t.Month())==(int)(gosml.ConvertToInt(this.cronE.mm))){
 		 	break
 		 }
 	 }
@@ -138,17 +139,17 @@ func (cp *CronParser) Valid(t time.Time) bool{
 		flag:=cp.isRight(cp.dd,int64(dd))||(strings.EqualFold(cp.dd,"L")&&t.Add(time.Hour*24).Day()==1)
 		if flag{
 			for i,v:=range months{
-				cp.mm=strings.ReplaceAll(cp.mm,v,sml.ConvertToString(i+1))
+				cp.mm=strings.ReplaceAll(cp.mm,v,gosml.ConvertToString(i+1))
 			}
 			flag=cp.isRight(cp.mm,int64(mm))
 			if flag{
 				for i,v:=range weeks{
-					cp.ww=strings.ReplaceAll(cp.ww,v,sml.ConvertToString(i+1))
+					cp.ww=strings.ReplaceAll(cp.ww,v,gosml.ConvertToString(i+1))
 				}
 				wd:=getWeek(int64(ww));
 				flag=cp.isRight(cp.ww,wd)
 				if !flag{
-					flag=wd==sml.ConvertToInt(sml.SubStr(cp.ww,0,1))
+					flag=wd==gosml.ConvertToInt(gosml.SubStr(cp.ww,0,1))
 					flag=flag&&strings.Contains(cp.ww,"L")&&dd>t.AddDate(0,0,7).Day()
 				}
 				return flag&&cp.isRight(cp.yy,int64(yy))
@@ -172,11 +173,11 @@ func (cp *CronParser) isRight(evalStr string,ct int64) bool{
 				return evalStr=="*"||evalStr=="?"||contains(strings.Split(evalStr,","),strconv.FormatInt(ct,10))
 			}else{
 				ss:=strings.Split(evalStr,"-")
-				return sml.ConvertToInt(ss[1])<=ct&&sml.ConvertToInt(ss[1])>=ct
+				return gosml.ConvertToInt(ss[1])<=ct&&sml.ConvertToInt(ss[1])>=ct
 			}
 		}else{
 			ss:=strings.Split(evalStr,"/")
-			start,limit:=sml.ConvertToInt(ss[1]),sml.ConvertToInt(ss[1])
+			start,limit:=gosml.ConvertToInt(ss[1]),gosml.ConvertToInt(ss[1])
 			return ct-start>=0 &&(ct-start)%limit==0
 		}
 }

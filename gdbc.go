@@ -1,4 +1,4 @@
-package sml
+package gosml
 
 import (
 	"database/sql"

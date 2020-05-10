@@ -1,6 +1,6 @@
 # gosml
 
- gosml 做为 [![sml](https://github.com/huangwenjimmy/sml) GOLANG实现，保留了大部门工具类（Https,SqlTemplate,ManagedQueue,Cron,Scheduler,gdbc），可基于配置快速开发restful接口
+ gosml 做为 [![sml](https://github.com/huangwenjimmy/sml) GOLANG实现，保留了大部分工具类（Https,SqlTemplate,ManagedQueue,Cron,Scheduler,gdbc），可基于配置快速开发restful接口
  
  ## Features
  
@@ -34,8 +34,8 @@ import (
 
 func main1(){
 	//init sml sqltemplate
-	stq:=sml.Init(sml.Ds{Id:"defJt",Url:"root:rooxxx@tcp(192.168.1.xxx:3306)/xxxx",DbType:"mysql"})
-	stq.Cache(sml.NewDefaultCacheManager()) //添加缓存
+	stq:=gosml.Init(gosml.Ds{Id:"defJt",Url:"root:rooxxx@tcp(192.168.1.xxx:3306)/xxxx",DbType:"mysql"})
+	stq.Cache(gosml.NewDefaultCacheManager()) //添加缓存
 	result_map,_:=stq.Gdbcs["defJt"].QueryForMap("select 1 as a where 1=?",1)
 	fmt.Println(result_map) //return map[string]interface{}
 	result_list,_:=stq.Gdbcs["defJt"].QueryForList("select * from (select 1 as a union all select 2 as a) t where a=$1",2)
@@ -72,12 +72,12 @@ import (
 
 func main(){
 	cp:=queue.NewCronParser("0 1 9 * * ?")
-	flag:=cp.Valid(sml.ConvertStrToDate("20200428090100"))
+	flag:=cp.Valid(gosml.ConvertStrToDate("20200428090100"))
 	fmt.Println(flag) //true
 	//trigger
 	tri:=queue.NewTrigger("0 1 9 * * ?")
 	fmt.Println(tri.GetNext())//当前时间下次执行时间
-	fmt.Println(tri.GetNextDate(sml.ConvertStrToDate("20200428090100")))//指定时间下次执行时间
+	fmt.Println(tri.GetNextDate(gosml.ConvertStrToDate("20200428090100")))//指定时间下次执行时间
 }
 ```
 
@@ -134,7 +134,7 @@ import (
 
 func main(){
 	//添加表头  basic 认证   指定连接读写超时时间
-	https:=sml.NewGetHttps("https://localhost:16003/bus/sml/query/if-cfg-interMngLike").
+	https:=gosml.NewGetHttps("https://localhost:16003/bus/sml/query/if-cfg-interMngLike").
 	Header("content-type","application/json").
 	BasicAuth("user:passwd").
 	ConnectTimeout(time.Second).RWTimeout(time.Second).
@@ -143,13 +143,13 @@ func main(){
 	//支持对返回结果进行多种操作,获取流，反序列化，下载等
 	fmt.Println(https.GetBodyString())//https.GetBodyBytes()|https.GetBodyTo(writer)|https.GetBodyToFile(*File)
 	//post-body请求，body支持   string []byte  io.reader
-	https=sml.NewPostBodyHttps("https://localhost:16003/bus/sml/query/if-cfg-interMngLike").Body(`{"ids":"1001","name":"测试"}`)
+	https=gosml.NewPostBodyHttps("https://localhost:16003/bus/sml/query/if-cfg-interMngLike").Body(`{"ids":"1001","name":"测试"}`)
 	https.Execute()
 	fmt.Println(https.GetBodyString())
-	//post-upload上传  需要指定Multipart  表单参数Param url参数请自行拼接至url  通过sml.UpFile  可添加多个文件
-	https=sml.NewPostFormHttps("https://localhost:16003/bus/sml/web/file/upload").Multipart().
+	//post-upload上传  需要指定Multipart  表单参数Param url参数请自行拼接至url  通过gosml.UpFile  可添加多个文件
+	https=gosml.NewPostFormHttps("https://localhost:16003/bus/sml/web/file/upload").Multipart().
 	Param("filepath","../logs").
-	UpFile(&sml.UpFile{FormName:"file",FileName:"hello1.txt",Input:strings.NewReader("helloworld234天啊\n我是上传的内容")})
+	UpFile(&gosml.UpFile{FormName:"file",FileName:"hello1.txt",Input:strings.NewReader("helloworld234天啊\n我是上传的内容")})
 	https.Execute()
 	fmt.Println(https.Response.Status,https.GetBodyString())
 }

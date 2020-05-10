@@ -1,4 +1,4 @@
-package sml
+package gosml
 
 import (
 	"fmt"
@@ -96,6 +96,7 @@ func FromJson(data []byte,v interface{}) error{
 }
 func MapToStructure(m interface{}, rawVal interface{}) error{
 	return mapstructure.Decode(m,rawVal)
+	
 }
 func debug(a...interface{}){
 	fmt.Println(a...)
