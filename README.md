@@ -1,26 +1,26 @@
 # gosml
 
- gosml ×öÎª [![sml](https://github.com/huangwenjimmy/sml) GOLANGÊµÏÖ£¬±£ÁôÁË´ó²¿·Ö¹¤¾ßÀà£¨Https,SqlTemplate,ManagedQueue,Cron,Scheduler,gdbc£©£¬¿É»ùÓÚÅäÖÃ¿ìËÙ¿ª·¢restful½Ó¿Ú
+ gosml åšä¸º [![sml](https://github.com/huangwenjimmy/sml) GOLANGå®ç°ï¼Œä¿ç•™äº†å¤§éƒ¨åˆ†å·¥å…·ç±»ï¼ˆHttps,SqlTemplate,ManagedQueue,Cron,Scheduler,gdbcï¼‰ï¼Œå¯åŸºäºé…ç½®å¿«é€Ÿå¼€å‘restfulæ¥å£
  
  ## Features
  
- ** SqlTemplate ¿ìËÙ·½±ãµÄÊı¾İ²éÑ¯Ä£°å£¬Ö§³ÖÅäÖÃ´æ·ÅÊı¾İ¿â,»ò±¾µØÎÄ¼şÔ¶³ÌÎÄ¼ş¡£
+ ** SqlTemplate å¿«é€Ÿæ–¹ä¾¿çš„æ•°æ®æŸ¥è¯¢æ¨¡æ¿ï¼Œæ¨¡æ¿é…ç½®æ”¯æŒå­˜æ”¾æ•°æ®åº“,æˆ–æœ¬åœ°æ–‡ä»¶è¿œç¨‹æ–‡ä»¶ã€‚
  
- ** Https Á´Ê½·ç¸ñ£¬¶Ô¸÷Àà²éÑ¯£¬²ÎÊı[url²ÎÊı£¬±íÍ·²ÎÊı£¬body²ÎÊı£¬ÎÄ¼şÁ÷]µÈ½øĞĞ·â×°·½±ãÍ³Ò»²Ù×÷
+ ** Https é“¾å¼é£æ ¼ï¼Œå¯¹å„ç±»æŸ¥è¯¢ï¼Œå‚æ•°[urlå‚æ•°ï¼Œè¡¨å¤´å‚æ•°ï¼Œbodyå‚æ•°ï¼Œæ–‡ä»¶æµ]ç­‰è¿›è¡Œå°è£…æ–¹ä¾¿ç»Ÿä¸€æ“ä½œ
  
- ** Cron cron±í´ïÊ¾£¬ÊµÏÖ95%ÒÔÉÏ£¬²¢ÇÒÔö¼Ó·ûºÏ¹úÈËµÄÊéĞ´ÈçÖÜÏà¹ØÉè¶¨
+ ** Cron cronè¡¨è¾¾ç¤ºï¼Œå®ç°95%ä»¥ä¸Šï¼Œå¹¶ä¸”å¢åŠ ç¬¦åˆå›½äººçš„ä¹¦å†™ä¹ æƒ¯ï¼Œå¦‚å‘¨æ•°å­—è¡¨ç¤ºç­‰è®¾å®š
  
- ** ManagedQueue Ïß³Ì¶ÓÁĞ¹ÜÀíÆ÷£¬Ö§³ÖÖ¸¶¨Ğ­³ÌÊı£¬¶ÓÁĞ´óĞ¡£¬ÔËĞĞÈÎÎñ¼à¿ØÍ³¼Æ¡¢ÖØĞÂÏÂ·¢µÈ
+ ** ManagedQueue çº¿ç¨‹é˜Ÿåˆ—ç®¡ç†å™¨ï¼Œæ”¯æŒæŒ‡å®šåç¨‹æ•°ï¼Œé˜Ÿåˆ—å¤§å°ï¼Œè¿è¡Œä»»åŠ¡ç›‘æ§ç»Ÿè®¡ã€é‡æ–°ä¸‹å‘ç­‰
  
- ** Scheduler µ÷¶ÈÆ÷£¬Ö§³Öcron±í´ï¿îÈÎÎñ£¬Ãë¼¶¾«È·£¬ÇáËÉÖ§³ÖÍò¼¶ÒÔÉÏÈÎÎñµ÷¶È£¬Ö§³ÖÖÜÆÚµ÷¶È£¬µ¥ÈÎÎñµ÷¶È£¬ÑÓÊ±µ÷¶È
+ ** Scheduler è°ƒåº¦å™¨ï¼Œæ”¯æŒcronè¡¨è¾¾æ¬¾ä»»åŠ¡ï¼Œç§’çº§ç²¾ç¡®ï¼Œè½»æ¾æ”¯æŒä¸‡çº§ä»¥ä¸Šä»»åŠ¡è°ƒåº¦ï¼Œæ”¯æŒå‘¨æœŸè°ƒåº¦ï¼Œå•ä»»åŠ¡è°ƒåº¦ï¼Œå»¶æ—¶è°ƒåº¦
  
- ** Gdbc ÀàJDBC²Ù×÷£¬Ö§³Ö»Øµ÷´¦Àí£¬Ìá¹©³£ÓÃ²éÑ¯api
+ ** Gdbc ç±»JDBCæ“ä½œï¼Œæ”¯æŒå›è°ƒå¤„ç†ï¼Œæä¾›å¸¸ç”¨æŸ¥è¯¢api
  
  ## Usage
  
  ### Gdbc
  
- ¿ìËÙÊ¹ÓÃ gddc
+ å¿«é€Ÿä½¿ç”¨ gddc
  
  ```go
  package main
@@ -35,31 +35,31 @@ import (
 func main1(){
 	//init sml sqltemplate
 	stq:=gosml.Init(gosml.Ds{Id:"defJt",Url:"root:rooxxx@tcp(192.168.1.xxx:3306)/xxxx",DbType:"mysql"})
-	stq.Cache(gosml.NewDefaultCacheManager()) //Ìí¼Ó»º´æ
+	stq.Cache(gosml.NewDefaultCacheManager()) //æ·»åŠ ç¼“å­˜
 	result_map,_:=stq.Gdbcs["defJt"].QueryForMap("select 1 as a where 1=?",1)
 	fmt.Println(result_map) //return map[string]interface{}
 	result_list,_:=stq.Gdbcs["defJt"].QueryForList("select * from (select 1 as a union all select 2 as a) t where a=$1",2)
 	fmt.Println(result_list)//result []map[string]interface{}
 	stq.Gdbcs["defJt"].QueryForCall("select * from sml_if where limit ?",func(row map[string]interface{}) (bool,error){
-			//ÊÊÓÃÓÚµ¼³öµÈÁ÷Ê½²Ù×÷,·µ»Øbool error¹©ÉÏ¼¶ÅĞ¶Ï
+			//é€‚ç”¨äºå¯¼å‡ºç­‰æµå¼æ“ä½œ,è¿”å›bool errorä¾›ä¸Šçº§åˆ¤æ–­
 			return true,nil
 		},10000)
-	//sml template apiÖ§³ÖÅäÖÃsql²Î¿¼java-api
+	//sml template apiæ”¯æŒé…ç½®sqlå‚è€ƒjava-api
 	result_multi,_:=stq.Query("test-if",map[string]string{"id":"as","b":"hw","age":"30","time":"2020-04-22T10:06:04Z","dd":"1,2,3","times":"201904,201908"})
 	fmt.Println(result_multi)//result    map list page
 }
  ```
   ### Cron
   
-  crontab±í´ïÊ¾ÊµÏÖ£¬Ö§³ÖÃë¼¶£¬ÏÂ´ÎÖ´ĞĞÊ±¼ä£¬±í´ïÊ¾ÄÚÈİ
-* ss mi HH day-of-mon Mon day-of-w Year[¿É²»Ñ¡]
-*  0 0/5 * * * ?          //´Ó0µã£¬Ã¿¸ô5·ÖÖÓÖ´ĞĞ  
-*  0 0,30 9-20 * * ?      //Ã¿Ìì9µãµ½20µã,0·ÖºÍ30·ÖÖ´ĞĞ
-*  0 0 9 1 * ?            //Ã¿ÔÂ1ºÅ9µãÕûÖ´ĞĞ
-*  0 40 23 L * ?          //Ã¿ÔÂ×îºóÒ»Ìì23:40·ÖÖ´ĞĞ
-*  0 0 9 ? * MON          //Ã¿ÖÜÒ»9µãÕûÖ´ĞĞ 
-*  0 0 9 ? * FRIL         //Ã¿ÔÂ×îºóÒ»¸öÖÜÆÚÎå9µãÕûÖ´ĞĞ
-*  0 0 9 1 JUN-DEC *      //7ÔÂÖÁ12ÔÂÃ¿1ºÅ9µãÕûÖ´ĞĞ
+  crontabè¡¨è¾¾ç¤ºå®ç°ï¼Œæ”¯æŒç§’çº§ï¼Œä¸‹æ¬¡æ‰§è¡Œæ—¶é—´ï¼Œè¡¨è¾¾ç¤ºå†…å®¹
+* ss mi HH day-of-mon Mon day-of-w Year[å¯ä¸é€‰]
+*  0 0/5 * * * ?          //ä»0ç‚¹ï¼Œæ¯éš”5åˆ†é’Ÿæ‰§è¡Œ  
+*  0 0,30 9-20 * * ?      //æ¯å¤©9ç‚¹åˆ°20ç‚¹,0åˆ†å’Œ30åˆ†æ‰§è¡Œ
+*  0 0 9 1 * ?            //æ¯æœˆ1å·9ç‚¹æ•´æ‰§è¡Œ
+*  0 40 23 L * ?          //æ¯æœˆæœ€åä¸€å¤©23:40åˆ†æ‰§è¡Œ
+*  0 0 9 ? * MON          //æ¯å‘¨ä¸€9ç‚¹æ•´æ‰§è¡Œ 
+*  0 0 9 ? * FRIL         //æ¯æœˆæœ€åä¸€ä¸ªå‘¨æœŸäº”9ç‚¹æ•´æ‰§è¡Œ
+*  0 0 9 1 JUN-DEC *      //7æœˆè‡³12æœˆæ¯1å·9ç‚¹æ•´æ‰§è¡Œ
 
 ```go
 package main
@@ -76,14 +76,14 @@ func main(){
 	fmt.Println(flag) //true
 	//trigger
 	tri:=queue.NewTrigger("0 1 9 * * ?")
-	fmt.Println(tri.GetNext())//µ±Ç°Ê±¼äÏÂ´ÎÖ´ĞĞÊ±¼ä
-	fmt.Println(tri.GetNextDate(gosml.ConvertStrToDate("20200428090100")))//Ö¸¶¨Ê±¼äÏÂ´ÎÖ´ĞĞÊ±¼ä
+	fmt.Println(tri.GetNext())//å½“å‰æ—¶é—´ä¸‹æ¬¡æ‰§è¡Œæ—¶é—´
+	fmt.Println(tri.GetNextDate(gosml.ConvertStrToDate("20200428090100")))//æŒ‡å®šæ—¶é—´ä¸‹æ¬¡æ‰§è¡Œæ—¶é—´
 }
 ```
 
 ### ManagedQueue|Scheduler
 
-µ÷¶ÈÆ÷+Ïß³Ì¹ÜÀíÆ÷½áºÏÊ¹ÓÃ£¬¸ßĞ§Á÷×ª¸÷ÄÚ²¿»·½ÚÈÎÎñ¹ÜÀí
+è°ƒåº¦å™¨+çº¿ç¨‹ç®¡ç†å™¨ç»“åˆä½¿ç”¨ï¼Œé«˜æ•ˆæµè½¬å„å†…éƒ¨ç¯èŠ‚ä»»åŠ¡ç®¡ç†
 
 ```go
 package main
@@ -95,15 +95,15 @@ import (
 )
 
 func main(){
-	ds:=queue.NewScheduler("defaultScheduler",10,10000)//´´½¨µ÷¶ÈÆ÷Ö¸¶¨10¸öĞ­³Ì£¬10000¸ö¶ÓÁĞÉî¶È
-	ds.InitScheduler()//³õÊ¼»¯
-	//ÏÂ·¢ÖÜÆÚÈÎÎñ
-	ds.SchedulerJob("3/5 * * * * ?",&DJ{"job1"})//Ìí¼Ó½á¹¹ÌåÈÎÎñ  implements  queue.Job method ToString|Run
-	//ÏÂ·¢·½·¨ÈÎÎñ
+	ds:=queue.NewScheduler("defaultScheduler",10,10000)//åˆ›å»ºè°ƒåº¦å™¨æŒ‡å®š10ä¸ªåç¨‹ï¼Œ10000ä¸ªé˜Ÿåˆ—æ·±åº¦
+	ds.InitScheduler()//åˆå§‹åŒ–
+	//ä¸‹å‘å‘¨æœŸä»»åŠ¡
+	ds.SchedulerJob("3/5 * * * * ?",&DJ{"job1"})//æ·»åŠ ç»“æ„ä½“ä»»åŠ¡  implements  queue.Job method ToString|Run
+	//ä¸‹å‘æ–¹æ³•ä»»åŠ¡
 	ds.SchedulerFuncJob("0 0/5 * * * ?","funcJob1",func(){
 		fmt.Println("funcJob1",time.Now())
 	})
-	//Ö´ĞĞÒ»´ÎĞÔÈÎÎñ
+	//æ‰§è¡Œä¸€æ¬¡æ€§ä»»åŠ¡
 	//ds.ExecuteTask(task)//task implements queue.Task
 	time.Sleep(time.Hour)
 }
@@ -120,7 +120,7 @@ func (dj *DJ) Run() error{
 ```
 
 ### Https   
- Ö§³Ö³£¼û²Ù×÷
+ æ”¯æŒå¸¸è§æ“ä½œ
 
 ```go
 package main
@@ -133,23 +133,23 @@ import (
 )
 
 func main(){
-	//Ìí¼Ó±íÍ·  basic ÈÏÖ¤   Ö¸¶¨Á¬½Ó¶ÁĞ´³¬Ê±Ê±¼ä
+	//æ·»åŠ è¡¨å¤´  basic è®¤è¯   æŒ‡å®šè¿æ¥è¯»å†™è¶…æ—¶æ—¶é—´
 	https:=gosml.NewGetHttps("https://localhost:16003/bus/sml/query/if-cfg-interMngLike").
 	Header("content-type","application/json").
 	BasicAuth("user:passwd").
 	ConnectTimeout(time.Second).RWTimeout(time.Second).
-	Param("ids","10001").Param("name","²âÊÔ")
+	Param("ids","10001").Param("name","æµ‹è¯•")
 	https.Execute()
-	//Ö§³Ö¶Ô·µ»Ø½á¹û½øĞĞ¶àÖÖ²Ù×÷,»ñÈ¡Á÷£¬·´ĞòÁĞ»¯£¬ÏÂÔØµÈ
+	//æ”¯æŒå¯¹è¿”å›ç»“æœè¿›è¡Œå¤šç§æ“ä½œ,è·å–æµï¼Œååºåˆ—åŒ–ï¼Œä¸‹è½½ç­‰
 	fmt.Println(https.GetBodyString())//https.GetBodyBytes()|https.GetBodyTo(writer)|https.GetBodyToFile(*File)
-	//post-bodyÇëÇó£¬bodyÖ§³Ö   string []byte  io.reader
-	https=gosml.NewPostBodyHttps("https://localhost:16003/bus/sml/query/if-cfg-interMngLike").Body(`{"ids":"1001","name":"²âÊÔ"}`)
+	//post-bodyè¯·æ±‚ï¼Œbodyæ”¯æŒ   string []byte  io.reader
+	https=gosml.NewPostBodyHttps("https://localhost:16003/bus/sml/query/if-cfg-interMngLike").Body(`{"ids":"1001","name":"æµ‹è¯•"}`)
 	https.Execute()
 	fmt.Println(https.GetBodyString())
-	//post-uploadÉÏ´«  ĞèÒªÖ¸¶¨Multipart  ±íµ¥²ÎÊıParam url²ÎÊıÇë×ÔĞĞÆ´½ÓÖÁurl  Í¨¹ıgosml.UpFile  ¿ÉÌí¼Ó¶à¸öÎÄ¼ş
+	//post-uploadä¸Šä¼   éœ€è¦æŒ‡å®šMultipart  è¡¨å•å‚æ•°Param urlå‚æ•°è¯·è‡ªè¡Œæ‹¼æ¥è‡³url  é€šè¿‡gosml.UpFile  å¯æ·»åŠ å¤šä¸ªæ–‡ä»¶
 	https=gosml.NewPostFormHttps("https://localhost:16003/bus/sml/web/file/upload").Multipart().
 	Param("filepath","../logs").
-	UpFile(&gosml.UpFile{FormName:"file",FileName:"hello1.txt",Input:strings.NewReader("helloworld234Ìì°¡\nÎÒÊÇÉÏ´«µÄÄÚÈİ")})
+	UpFile(&gosml.UpFile{FormName:"file",FileName:"hello1.txt",Input:strings.NewReader("helloworld234å¤©å•Š\næˆ‘æ˜¯ä¸Šä¼ çš„å†…å®¹")})
 	https.Execute()
 	fmt.Println(https.Response.Status,https.GetBodyString())
 }
