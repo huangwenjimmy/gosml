@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"gosml"
-	"gosml/net2"
+	"github.com/huangwenjimmy/gosml"
+	"github.com/huangwenjimmy/gosml/net2"
 	"net"
 	"strings"
 )

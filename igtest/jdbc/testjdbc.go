@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
-	"gosml"
+	"github.com/huangwenjimmy/gosml"
 )
 
 func main() {

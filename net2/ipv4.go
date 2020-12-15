@@ -1,7 +1,7 @@
 package net2
 
 import (
-	"gosml"
+	"github.com/huangwenjimmy/gosml"
 	"math"
 	"strings"
 )

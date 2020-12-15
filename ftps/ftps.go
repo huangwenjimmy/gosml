@@ -1,8 +1,8 @@
 package ftps
 
 import (
+	"github.com/huangwenjimmy/gosml"
 	"github.com/jlaffaye/ftp"
-	"gosml"
 	"io"
 	"time"
 )

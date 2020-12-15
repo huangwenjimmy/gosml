@@ -2,7 +2,7 @@ package queue
 
 import (
 	"errors"
-	"gosml"
+	"github.com/huangwenjimmy/gosml"
 	"regexp"
 	"strconv"
 	"strings"
